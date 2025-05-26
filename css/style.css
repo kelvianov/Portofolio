@@ -30,7 +30,7 @@ header {
     
 }
 .socials-icons i[class^="ph-"] {
-  font-size: 0.1rem;
+  font-size: 2rem;
 }
 
 
@@ -330,7 +330,7 @@ html {
     justify-content: center; /* Biar isi ada di tengah secara vertikal */
     padding: 0 8rem; /* Horizontal padding */
     
-    margin-bottom: 20rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -468,29 +468,32 @@ html {
 
 
 #contact {
-    scroll-margin-top: 10px; /* Sesuaikan tinggi header */
-    min-height: 100vh; /* Buat section setinggi layar penuh */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Biar isi ada di tengah secara vertikal */
-    padding: 0 8rem; /* Horizontal padding */
-    
+  scroll-margin-top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */ /* HAPUS ini */
+  padding: 5rem 8rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
+
 #contact {
-  scroll-margin-top: 10px;
+
   padding: 5rem 8rem;
- 
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #contact h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  margin-top: 10rem;
 }
 
 #contact p {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #444;
 }
 
@@ -847,6 +850,7 @@ body {
   opacity: 0; /* Mulai dengan teks yang tidak terlihat */
   animation: fadeInSlide s infinite alternate;
    animation: fadeInSlide 2s infinite alternate;
+   margin-top: 2rem;
 }
 
 #certificates p {
@@ -1275,6 +1279,7 @@ header {
 }
 
 /* =================== SOCIAL ICONS =================== */
+@media (max-width: 768px) {
 .socials-icons {
     position: absolute;
     top: 34%;
@@ -2121,7 +2126,7 @@ body {
         justify-content: center;
         gap: 2rem;
         padding: 2rem 0;
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
 
     .socials-icons i {
@@ -2270,10 +2275,15 @@ body {
         padding: 3rem 1.5rem;
         min-height: auto;
     }
-
+    
+        
+    }
+    @media (max-width: 768px) {
     #contact h2 {
         font-size: 2.2rem;
-    }
+        margin-top: 8rem;
+    }   
+}
 
     #contact p {
         font-size: 0.95rem;
