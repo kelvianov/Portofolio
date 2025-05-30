@@ -560,7 +560,7 @@ html {
 .watermark {
   position: fixed;               /* Tetap berada di posisi tetap */
   bottom: 10px;                  /* Watermark berada 10px dari bawah layar */
-  left: 1%;                     /* Memposisikan watermark di tengah layar secara horizontal */
+  left:51%;                     /* Memposisikan watermark di tengah layar secara horizontal */
   transform: translateX(-50%);    /* Memastikan watermark tepat di tengah */
   font-size: 0.9rem;             /* Ukuran font watermark */
   color: rgba(0, 0, 0, 0.5);     /* Warna watermark dengan transparansi */
